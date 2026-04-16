@@ -1,11 +1,53 @@
-{
-  "title": "PSU x Canva",
-  "subTitle": "เตรียมรับสิทธิ์ใช้งาน Canva for Campus ฟรี!",
-  "targetDate": "2026-05-18T00:00:00",
-  "logoUrl": "https://example.com/logo.png",
-  "moreInfo": {
-    "text": "สิทธิพิเศษสำหรับนักศึกษาปัจจุบันทุกคน...",
-    "imageUrl": "https://example.com/poster.jpg",
-    "layoutType": "free-style" 
-  }
+body {
+    background: linear-gradient(135deg, #6e8efb, #a777e3);
+    font-family: 'Kanit', sans-serif;
+    color: white;
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
 }
+
+.school-logo {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.school-logo img { width: 50px; margin-right: 10px; }
+
+.countdown-container {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.time-box {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 15px;
+    border-radius: 15px;
+    min-width: 70px;
+    backdrop-filter: blur(5px);
+}
+
+#info-btn {
+    padding: 12px 25px;
+    border-radius: 30px;
+    border: none;
+    background: #ffcc00;
+    color: #333;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#info-btn:hover { transform: scale(1.1); }
+
+/* Modal สไตล์ */
+.modal { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.8); }
+.modal-content { background: white; color: #333; margin: 10% auto; padding: 20px; width: 80%; border-radius: 20px; position: relative; }
